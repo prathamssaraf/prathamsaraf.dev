@@ -661,6 +661,9 @@ html.js .scene--full .scene-head > .meta {
 /* Details sit above the name, on the plain sky, not on the busy floor; the
    DOM keeps the h1 first for screen readers. */
 .hello-bottom { display: grid; gap: 14px; justify-items: start; order: -1; }
+/* The standing letters lean up over the buttons; keep the buttons on top so
+   they stay clickable. */
+.hello-bottom { position: relative; z-index: 2; }
 .hello-bottom .meta { color: var(--soft); }
 /* The buttons sit on the floor too: fill the outlined ones. */
 .hello .btn:not(.btn--solid) { background: var(--bg); }
